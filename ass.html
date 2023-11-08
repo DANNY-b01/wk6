@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #color-box{
+            height:200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <button>  change color</button>
+    <h1>color</h1>
+    <section id="color-box"></section>
+    
+   
+    <input type="text" placeholder="enter a color" id="color-input">
+
+
+
+
+
+    
+</body>
+<script>
+    let btn=document.querySelector('button')
+    let colorBox=document.getElementById('color-box')
+    let colorInput=document.getElementById('color-input')
+    
+    btn.addEventListener('click', changeColor)
+
+    function changeColor(){
+
+        let color= colorInput.value.toLowerCase()
+        let bcolor
+
+        color == "red" ? bcolor = 'red':
+        color == "blue" ? bcolor = 'blue':
+        color == "greeen" ? bcolor = 'green':
+        (colorInput.value= "invalid")
+        return colorBox.style.background =bcolor
+    }
+
+
+  
+
+
+
+
+
+ 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//     if(input == red){
+//         space.style.background ='red'
+//     }
+//     else if( input == blue){
+//         space.style.background ='blue'
+//     }
+//     else if( input == green){
+//         space.style.background ='green'
+
+//     }
+// else{
+//     input='invalid color'
+// }
+
+</script>
+</html>
