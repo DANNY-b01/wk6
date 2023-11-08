@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if statment</title>
+</head>
+<body>
+    <p>Your score is: <span class="score"></span></p>
+    <!-- <p>Your score is: <span class="score"></span></p>
+    <p>Your score is: <span class="score"></span></p> -->
+    <p>Your grade is: <span class="grade"></span></p>
+    
+    
+</body>
+<script>
+    const score=document.getElementsByClassName('score')[0]
+    const grade=document.getElementsByClassName('grade')[0]
+    const p=document.querySelectorAll('p')[1]
+
+
+
+    const result = prompt('what is your score')
+    score.innerHTML=result
+
+    // // if(result  >= 50 && result <= 100){
+    // //     grade.innerHTML='pass'
+    // }
+if(result<=100 && !isNaN(result)){
+
+        if(result  >= 80){
+            grade.innerHTML='AA'
+            p.style.background= 'green'
+            
+        }
+        else if(result  >= 60){
+            grade.innerHTML='B'
+            p.style.background= 'yellow'
+        
+        }
+        else if(result  >= 50){
+            grade.innerHTML='C'
+            p.style.background= 'orange'
+        
+        }
+        else{
+            grade.textContent ='FF'
+            p.style.background= 'red' 
+        
+        }
+}
+else{
+    grade.textContent='result invalid'
+}
+
+
+
+
+
+
+
+
+
+
+    // score.innerHTML[0] = 50
+    // score.innerHTML[1] = 40
+    // score.innerHTML[2] = 40
+    
+    // const score=document.querySelector('score')
+
+
+</script>
+</html>
